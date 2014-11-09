@@ -1,7 +1,0 @@
-192.168.1.1 - - [09/Nov/2014:16:01:24 +0200] "GET /aids.txt HTTP/1.1" 304 0 "http://kuken.funkar.nu:1194/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
-192.168.1.1 - - [09/Nov/2014:16:01:26 +0200] "GET / HTTP/1.1" 304 0 "" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
-192.168.1.1 - - [09/Nov/2014:16:01:39 +0200] "GET / HTTP/1.1" 304 0 "" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
-192.168.1.1 - - [09/Nov/2014:16:01:39 +0200] "GET / HTTP/1.1" 304 0 "" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
-192.168.1.1 - - [09/Nov/2014:16:01:39 +0200] "GET / HTTP/1.1" 304 0 "" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
-192.168.1.1 - - [09/Nov/2014:16:01:39 +0200] "GET / HTTP/1.1" 304 0 "" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
-192.168.1.1 - - [09/Nov/2014:16:01:40 +0200] "GET / HTTP/1.1" 304 0 "" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
