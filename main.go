@@ -5,6 +5,8 @@ import (
     "log"
     "net/http"
     "net"
+    "os"
+    "github.com/gorilla/handlers"
 )
 
 func main() {
@@ -13,7 +15,15 @@ var port string
     fmt.Println("Port: ")
     fmt.Scanf("%s", &port)
     var path string = "./www"
-    http.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir(path))))
+
+    logFile, err := os.OpenFile("server.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0666)
+    if err != nil {
+        panic(err)
+    }
+
+    http.Handle("/", handlers.CombinedLoggingHandler(logFile, http.FileServer(http.Dir(path))))
+    	//http.Handle("/", handlers.CombinedLoggingHandler(os.Stdout, http.FileServer(http.Dir("."))))
+    	//http.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir(path))))
     addrs, err := net.InterfaceAddrs()
     if err != nil {   panic(err)}
     for i, addr := range addrs { fmt.Printf("%d %v\n", i, addr) }
