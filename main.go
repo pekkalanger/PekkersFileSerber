@@ -10,10 +10,13 @@ import (
 )
 
 func main() {
-    //var port string
-    port := "1194"
-    fmt.Print("Port: ")
-    fmt.Scanf("%s", &port)
+    var port string
+    if(1 == len(os.Args[1:])){
+    	port = os.Args[1]
+    } else {
+	fmt.Print("Port: ")
+    	fmt.Scanf("%s", &port)
+    }
     var wwwDir string = "./www"
 
     logFile, err := os.OpenFile("server.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0666)
